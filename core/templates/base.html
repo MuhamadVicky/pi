@@ -14,7 +14,7 @@
 <div class="page-header">
     <h1><a href="/">Storious</a></h1>
     <div>
-        <a href="{% url 'fiksi' %}">Fiksi</a>
+        <a class=" {% if request.path == '/fiksi/' %} active {% endif %}" href="{% url 'fiksi' %}">Fiksi</a>
         <a href="{% url 'berita' %}">Berita</a>
     </div>
 </div>
