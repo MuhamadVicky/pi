@@ -12,7 +12,7 @@
                         <p>published : {{ post.published_date }}</p>
                     </div>
                     <h4>{{ post.author }}</h4>
-                    <p>{{ post.text|linebreaks }}</p>
+                    <p>{{ post.text|truncatechars:40|linebreaks}}</p>
                 </div>
             {%  endfor %}
         </div>

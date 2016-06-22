@@ -13,9 +13,12 @@
 <body>
 <div class="page-header">
     <h1><a href="/">Storious</a></h1>
+    <a class="actions site-header-actions btn" href="/registration">Sign up</a>
+    <a class="actions-login site-header-login btn" href="/accounts/login">Login</a>
+    <hr />
     <div>
-        <a class=" {% if request.path == '/fiksi/' %} active {% endif %}" href="{% url 'fiksi' %}">Fiksi</a>
-        <a href="{% url 'berita' %}">Berita</a>
+        <a class="{% if request.path == '/fiksi/'%}active{% endif %}" href="{% url 'fiksi' %}">Fiksi</a>
+        <a class="{% if request.path == '/berita/' %} active {% endif %}" href="{% url 'berita' %}">Berita</a>
     </div>
 </div>
 <div class="content container-fluid">

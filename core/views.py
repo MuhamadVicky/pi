@@ -1,5 +1,11 @@
+from django import forms
+from django.contrib.auth.forms import UserCreationForm
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
+from django.contrib import auth
+from django.contrib.auth.models import User
+from . forms import MyUserCreationForm
 
 from core.models import Post
 
@@ -29,6 +35,19 @@ class Berita(ListView):
     template_name = 'berita.html'
     paginate_by = 2
     context_object_name = 'posts'
+
+def register(request):
+    if request.method == 'POST':
+        form = MyUserCreationForm(request.POST)
+        if form.is_valid():
+            new_user = form.save()
+            return HttpResponseRedirect("/admin")
+    else:
+        form = MyUserCreationForm()
+    return render(request, 'register.html', {
+        'form': form,
+    })
+
 
 
 

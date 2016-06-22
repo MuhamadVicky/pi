@@ -1,23 +1,24 @@
 .page-header {
     background-color: aliceblue;
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    padding: 20px 100px 20px 100px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: navajowhite;
+    color: #chucknorris;
     font-size: 36pt;
     text-decoration: none;
 }
 
-.page-header div a, .page-header div a, .page-header div a:visited, .page-header div a:active {
+.page-header div a, .page-header div a:visited, .page-header div a:active {
     color: #000000;
     font-size: 25pt;
     text-decoration: none;
     margin-right: 20px;
+
 }
 .content {
-    margin-left: 40px;
+    margin-left: 100px;
 }
 
 h1, h2, h3, h4, .page-header div a {
@@ -52,6 +53,41 @@ h1, h2, h3, h4, .page-header div a {
 }
 
 .active {
-    font-size: 100px;
-    color: brown;
+    border-top: 4px solid #34b5d0;
+}
+
+.site-header-actions{
+    position: absolute;
+    top: 11%;
+    right: 0;
+    margin-top: -19px;
+    margin-bottom: 0;
+    margin-right: 200px;
+}
+
+.actions{
+    color: #595959;
+}
+
+.btn{
+    background:linear-gradient(#F1F1F4,#EAE9E9);
+    border-color: #CCC;
+    text-decoration: none;
+}
+
+.page-header hr{
+    width:100%; height:1px; background: #fff;
+}
+
+.site-header-login{
+    position: absolute;
+    top: 11%;
+    right: 0;
+    margin-top: -19px;
+    margin-bottom: 0;
+    margin-right: 100px;
+}
+
+.actions-login{
+    color: #chucknorris;
 }
