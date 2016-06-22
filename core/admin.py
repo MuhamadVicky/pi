@@ -3,8 +3,26 @@ from .models import Post
 from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
 
+
 class PostAdmin(admin.ModelAdmin):
     readonly_fields = ['author', 'created_date', 'published_date']
+    list_display = [
+        'title',
+        'author',
+        'created_date',
+        'published_date',
+        'published',
+    ]
+
+    list_filter = [
+        'created_date',
+        'published_date',
+        'published',
+    ]
+
+    search_fields = [
+        'title'
+    ]
 
     def save_model(self, request, obj, form, change):
         obj.author = request.user
