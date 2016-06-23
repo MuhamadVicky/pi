@@ -36,6 +36,18 @@ class Berita(ListView):
     paginate_by = 2
     context_object_name = 'posts'
 
+class Olahraga(ListView):
+    queryset = Post.objects.filter(category='Olahraga')
+    template_name = 'olahraga.html'
+    paginate_by = 2
+    context_object_name = 'posts'
+
+class Teknologi(ListView):
+    queryset = Post.objects.filter(category='Teknologi')
+    template_name = 'teknologi.html'
+    paginate_by = 2
+    context_object_name = 'posts'
+
 def register(request):
     if request.method == 'POST':
         form = MyUserCreationForm(request.POST)

@@ -17,7 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.contrib.auth.views import login, logout
 
-from core.views import Home, PostDetail, Berita, Fiksi, register
+from core.views import Home, PostDetail, Berita, Fiksi, register, Olahraga, Teknologi
 
 urlpatterns = [
     url(r'^grappeli/', include('grappelli.urls')),
@@ -26,6 +26,8 @@ urlpatterns = [
     url(r'^post/(?P<pk>\d+)/$', PostDetail.as_view(), name='post_detail'),
     url(r'^fiksi/$', Fiksi.as_view(), name='fiksi'),
     url(r'^berita/$', Berita.as_view(), name='berita'),
+    url(r'^olahraga/$', Olahraga.as_view(), name='olahraga'),
+    url(r'^teknologi/$', Teknologi.as_view(), name='teknologi'),
     url(r'^registration/$', register),
     url(r'^accounts/login/$', login),
     url(r'^accounts/logout/$', logout),

@@ -91,3 +91,20 @@ h1, h2, h3, h4, .page-header div a {
 .actions-login{
     color: #chucknorris;
 }
+
+.index-masthead{
+    overflow: hidden;
+    color: #FFF;
+    text-align: center;
+    height: 500px;
+    position: relative;
+    padding-right: 0;
+    width: 1073px;
+}
+
+.index-masthead-text{
+    display: inline-block;
+    line-height: 1.2;
+    text-align: center;
+    margin: 150px auto;
+}

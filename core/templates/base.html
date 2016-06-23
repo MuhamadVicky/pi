@@ -19,6 +19,8 @@
     <div>
         <a class="{% if request.path == '/fiksi/'%}active{% endif %}" href="{% url 'fiksi' %}">Fiksi</a>
         <a class="{% if request.path == '/berita/' %} active {% endif %}" href="{% url 'berita' %}">Berita</a>
+        <a class="{% if request.path == '/olahraga/'%}active{% endif %}" href="{% url 'olahraga' %}">Olahraga</a>
+        <a class="{% if request.path == '/teknologi/'%}active{% endif %}" href="{% url 'teknologi' %}">Teknologi</a>
     </div>
 </div>
 <div class="content container-fluid">

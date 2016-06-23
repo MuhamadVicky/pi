@@ -1,14 +1,8 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {%  load i18n %}
-{%  block title %} Storious - Home {% endblock %}
+{%  block title %} Storious - Olahraga {% endblock %}
 {% block content %}
-    <div class="index-masthead" style="background-image: url(https://storybird.s3.amazonaws.com/artwork/kendall_betz/full/cover.jpeg);">
-        <div class="index-masthead-text">
-            <h1 style="font-size: 60px">Share</h1>
-            <h2 style="font-size: 40px">Experiences you'll always remember</h2>
-        </div>
-    </div>
     <div class="row">
         <div class="col-md-8">
             {% for post in posts %}
@@ -18,7 +12,7 @@
                         <p>published : {{ post.published_date }}</p>
                     </div>
                     <h4>{{ post.author }}</h4>
-                    <p>{{ post.text|truncatechars:40|linebreaks}}</p>
+                    <p>{{ post.text|truncatechars:20|linebreaks}}</p>
                 </div>
             {%  endfor %}
         </div>

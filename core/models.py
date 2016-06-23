@@ -5,6 +5,8 @@ from django.utils import timezone
 CATEGORY_CHOICES = [
     ['Fiksi', 'Fiksi'],
     ['Berita', 'Berita'],
+    ['Olahraga', 'Olahraga'],
+    ['Teknologi', 'Teknologi'],
 ]
 
 

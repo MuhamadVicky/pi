@@ -1,2 +1,4 @@
 Django==1.9.6
 django-grappelli==2.8.1
+
+  <img src="http://storybird.s3.amazonaws.com/artwork/kendall_betz/full/cover.jpeg"  width="1073" height="500">
