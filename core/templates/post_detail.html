@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load social_share %}
 {% block title %} {{ post.title }} {% endblock %}
 {% block content %}
     <div class="row">
@@ -11,10 +12,13 @@
                     <h4>{{ post.author }}</h4>
                     <p>{{ post.text|linebreaks }}</p>
                 </div>
+                {% post_to_facebook  object_or_url "Post to Facebook!" %}
+                {% post_to_twitter "New Post: {{object.title}}. Check it out!" object_or_url "Post to Twitter" %}
+                {% post_to_gplus object_or_url "Post to Google+!" %}
         </div>
     </div>
     <div class="row">
-    <div id="disqus_thread" class=" col-md-12" ></div>
+    <div id="disqus_thread" class=" col-md-11" ></div>
     </div>
 <script>
     /**

@@ -29,14 +29,6 @@ h1, h2, h3, h4, .page-header div a {
     color: #828282;
 }
 
-.save {
-    float: right;
-}
-
-.post-form textarea, .post-form input {
-    width: 100%;
-}
-
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
     float: right;
@@ -92,19 +84,16 @@ h1, h2, h3, h4, .page-header div a {
     color: #chucknorris;
 }
 
+
 .index-masthead{
-    overflow: hidden;
     color: #FFF;
     text-align: center;
     height: 500px;
-    position: relative;
-    padding-right: 0;
     width: 1073px;
 }
 
 .index-masthead-text{
     display: inline-block;
-    line-height: 1.2;
     text-align: center;
-    margin: 150px auto;
+    margin: 150px ;
 }

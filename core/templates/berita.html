@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
-{%  load i18n %}
 {%  block title %} Storious - Berita {% endblock %}
 {% block content %}
     <div class="row">
@@ -27,7 +26,7 @@
                     Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
                 </span>
                 {% if page_obj.has_next %}
-                    <a href="/?page={{ page_obj.next_page_number }}">next</a>
+                    <a href="/berita/?page={{ page_obj.next_page_number }}">next</a>
                 {% endif %}
             </span>
         </div>

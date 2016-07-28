@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'django_social_share',
+    'django.contrib.sites',
     'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -39,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'django_extensions',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -65,6 +68,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.core.context_processors.request',
             ],
         },
     },
@@ -123,3 +127,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 GRAPPELLI_ADMIN_TITLE = 'Storious'
+
+SITE_ID = 1
+
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+}
