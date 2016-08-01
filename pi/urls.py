@@ -16,8 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from django.contrib.auth.views import login, logout
-
-from core.views import Home, PostDetail, Berita, Fiksi, register, Olahraga, Teknologi
+from core.views import Home, PostDetail, Berita, Fiksi, register, Olahraga, Teknologi, redirect_to_home
 
 urlpatterns = [
     url(r'^grappeli/', include('grappelli.urls')),

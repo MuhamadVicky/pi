@@ -60,6 +60,7 @@ def register(request):
         'form': form,
     })
 
-
+def redirect_to_home(request):
+    return HttpResponseRedirect(Home.as_view)
 
 
