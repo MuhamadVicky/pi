@@ -1,5 +1,6 @@
 from django import forms
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, authenticate
+from django.contrib.auth import login, authenticate
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
@@ -53,6 +54,10 @@ def register(request):
         form = MyUserCreationForm(request.POST)
         if form.is_valid():
             new_user = form.save()
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=password)
+            login(request, user)
             return HttpResponseRedirect("/admin")
     else:
         form = MyUserCreationForm()
@@ -62,5 +67,4 @@ def register(request):
 
 def redirect_to_home(request):
     return HttpResponseRedirect(Home.as_view)
-
 

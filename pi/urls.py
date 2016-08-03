@@ -19,6 +19,7 @@ from django.contrib.auth.views import login, logout
 from core.views import Home, PostDetail, Berita, Fiksi, register, Olahraga, Teknologi, redirect_to_home
 
 urlpatterns = [
+    #url(r'^admin/logout/$', redirect_to_home),
     url(r'^grappeli/', include('grappelli.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^$', Home.as_view(), name='home'),
