@@ -97,3 +97,8 @@ h1, h2, h3, h4, .page-header div a {
     text-align: center;
     margin: 150px ;
 }
+
+.img {
+	max-width: 100%;
+	height: auto;
+}
