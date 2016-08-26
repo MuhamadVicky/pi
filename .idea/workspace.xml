@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50b63402-8470-47bf-a558-91f03dfbddf7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/templates/base.html" afterPath="$PROJECT_DIR$/core/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/templates/home.html" afterPath="$PROJECT_DIR$/core/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/views.py" afterPath="$PROJECT_DIR$/core/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi/settings.py" afterPath="$PROJECT_DIR$/pi/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi/settings_paw.py" afterPath="$PROJECT_DIR$/pi/settings_paw.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi/urls.py" afterPath="$PROJECT_DIR$/pi/urls.py" />
     </list>
     <ignored path="pi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,8 +89,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            <state relative-caret-position="143">
+              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
               <folding>
                 <element signature="e#229#332#0#HTML" expanded="true" />
                 <element signature="e#467#490#0#HTML" expanded="true" />
@@ -970,7 +963,14 @@
       <option name="project" value="LOCAL" />
       <updated>1470229749147</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="change on image so that can see through a mobile phone">
+      <created>1472246121372</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1472246121372</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1033,7 +1033,8 @@
     <MESSAGE value="v.1" />
     <MESSAGE value="remove like,update post admin" />
     <MESSAGE value="updated teknologi,olahraga and image" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated teknologi,olahraga and image" />
+    <MESSAGE value="change on image so that can see through a mobile phone" />
+    <option name="LAST_COMMIT_MESSAGE" value="change on image so that can see through a mobile phone" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1302,6 +1303,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1420,8 +1422,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        <state relative-caret-position="143">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
           <folding>
             <element signature="e#229#332#0#HTML" expanded="true" />
             <element signature="e#467#490#0#HTML" expanded="true" />
