@@ -31,6 +31,9 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'bootstrap3',
+    'django_social_share',
+    'core',
     'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -38,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core',
+    'django_extensions',
+    'debug_toolbar'
 ]
 
 MIDDLEWARE_CLASSES = [

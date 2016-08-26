@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from django.contrib.auth.views import login, logout
-from core.views import Home, PostDetail, Berita, Fiksi, register, Olahraga, Teknologi, redirect_to_home
+from core.views import Home, PostDetail, Berita, Fiksi, register, Olahraga, Teknologi #redirect_to_home
 
 urlpatterns = [
     #url(r'^admin/logout/$', redirect_to_home),
@@ -30,5 +30,4 @@ urlpatterns = [
     url(r'^teknologi/$', Teknologi.as_view(), name='teknologi'),
     url(r'^registration/$', register),
     url(r'^accounts/login/$', login),
-    url(r'^accounts/logout/$', logout),
 ]

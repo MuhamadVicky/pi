@@ -53,7 +53,7 @@ def register(request):
     if request.method == 'POST':
         form = MyUserCreationForm(request.POST)
         if form.is_valid():
-            new_user = form.save()
+            #new_user = form.save()
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=password)
@@ -65,6 +65,6 @@ def register(request):
         'form': form,
     })
 
-def redirect_to_home(request):
-    return HttpResponseRedirect(Home.as_view)
+#def redirect_to_home(request):
+    #return HttpResponseRedirect(Home.as_view)
 
