@@ -1,3 +1,4 @@
 Django==1.9.6
 django-grappelli==2.8.1
 django-bootstrap3
+django-social-share
